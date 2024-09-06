@@ -15,15 +15,14 @@ class Proyecto
         int opcionPrincipal;
         do
         {
-            Console.WriteLine("Bienvenido al programa de ventas de Celulares");
+            Console.WriteLine("Bienvenido al programa de ventas de Celulares en Tegucigalpa");
             Console.Clear();
             Console.WriteLine("=== ventas varias ===");
-            Console.WriteLine("1. Iphone");
+            Console.WriteLine("1. Iphone ");
             Console.WriteLine("2. Samsung");
             Console.WriteLine("3. Xiaomi");
             Console.WriteLine("4. Realme");
-            Console.WriteLine("5. Huawei");
-            Console.WriteLine("6. Salir");
+            Console.WriteLine("5. Salir");
             Console.WriteLine("=======================");
             Console.Write("Seleccione una opcion: ");
 
@@ -38,14 +37,14 @@ class Proyecto
                     {
                         Console.WriteLine("celulares Iphone Disponibles en nuestra tienda");
                         Console.WriteLine("1. Iphone 11 pro max 10,000 Lps");
-                        Console.WriteLine("2. IPhone 11 Pro 7000 Lps ");
-                        Console.WriteLine("3. IPhone 12 mini 15000 Lps");
-                        Console.WriteLine("4. IPhone 12 12000 Lps");
-                        Console.WriteLine("5. IPhone 12 Pro Max 12000 Lps");
-                        Console.WriteLine("6. IPhone 13 mini 7000 Lps");
-                        Console.WriteLine("7. IPhone XR 15000 Lps");
-                        Console.WriteLine("8. IPhone X 13000 Lps");
-                        Console.WriteLine("9. IPhone 8 Plus 14000 Lps");
+                        Console.WriteLine("2. IPhone 11 Pro 7,000 Lps ");
+                        Console.WriteLine("3. IPhone 12 mini 15,000 Lps");
+                        Console.WriteLine("4. IPhone 12 12,000 Lps");
+                        Console.WriteLine("5. IPhone 12 Pro Max 12,000 Lps");
+                        Console.WriteLine("6. IPhone 13 mini 7,000 Lps");
+                        Console.WriteLine("7. IPhone XR 15,000 Lps");
+                        Console.WriteLine("8. IPhone X 13,000 Lps");
+                        Console.WriteLine("9. IPhone 8 Plus 14,000 Lps");
                         Console.WriteLine("10. Regresar al menu principal");
                         Console.Write("Seleccione un producto: ");
                         Iphone = int.Parse(Console.ReadLine());
@@ -122,9 +121,9 @@ class Proyecto
                             listaProductos.Add($"{(Iphone == 1 ? "Iphone 11 pro max " : Iphone == 2 ? "IPhone 11 Pro" : Iphone == 3 ? "IPhone 12 mini " : Iphone == 4 ? "IPhone 12 " : Iphone == 5 ? "IPhone 12 Pro Max " : Iphone == 6 ? "IPhone 13 mini" : Iphone == 7 ? "IPhone XR " : Iphone == 8 ? "IPhone X " : Iphone == 9 ? "IPhone 8 Plus" : "")} x{cantidad}");
                             listaPrecios.Add(precioFinal);
 
-                            Console.WriteLine($"Precio por unidad con impuesto: ${precioConImpuesto:F2}");
+                            Console.WriteLine($"Precio por unidad con impuesto: {precioConImpuesto:F2} Lps");
                             Console.WriteLine($"Descuento aplicado: {descuento * 100}%");
-                            Console.WriteLine($"Precio total por {cantidad} unidades: ${precioFinal:F2}");
+                            Console.WriteLine($"Precio total por {cantidad} unidades: {precioFinal:F2} Lps");
 
 
                             Console.WriteLine("continuar viendo el inventario? ");
@@ -149,15 +148,15 @@ class Proyecto
                     do
                     {
                         Console.WriteLine("celulares Samsung Disponibles en nuestra tienda");
-                        Console.WriteLine("1. Samsung Galaxy S24 Ultra 17000 Lps");
-                        Console.WriteLine("2. Samsung Galaxy S21 Ultra 15000 Lps ");
-                        Console.WriteLine("3. Samsung Galaxy S21 12000 Lps");
-                        Console.WriteLine("4. Samsung Galaxy S22+ 13000 Lps");
-                        Console.WriteLine("5. Samsung Galaxy S21 FE 9000 Lps");
-                        Console.WriteLine("6. Samsung Galaxy S23 Ultra 11500 Lps");
-                        Console.WriteLine("7. Samsung Galaxy S23 Ultra 14800 Lps");
-                        Console.WriteLine("8. Samsung Galaxy A55 16500 Lps");
-                        Console.WriteLine("9. Samsung Galaxy A34 15700 Lps");
+                        Console.WriteLine("1. Samsung Galaxy S24 Ultra 17,000 Lps");
+                        Console.WriteLine("2. Samsung Galaxy S21 Ultra 15,000 Lps ");
+                        Console.WriteLine("3. Samsung Galaxy S21 12,000 Lps");
+                        Console.WriteLine("4. Samsung Galaxy S22+ 13,000 Lps");
+                        Console.WriteLine("5. Samsung Galaxy S21 FE 9,000 Lps");
+                        Console.WriteLine("6. Samsung Galaxy S23 Ultra 11,500 Lps");
+                        Console.WriteLine("7. Samsung Galaxy S23 Ultra 14,800 Lps");
+                        Console.WriteLine("8. Samsung Galaxy A55 16,500 Lps");
+                        Console.WriteLine("9. Samsung Galaxy A34 15,700 Lps");
                         Console.WriteLine("10. Regresar al menu principal");
                         Console.Write("Seleccione un producto: ");
                         Samsung = int.Parse(Console.ReadLine());
@@ -235,12 +234,12 @@ class Proyecto
                             listaProductos.Add($"{(Samsung == 1 ? "Samsung Galaxy S24 Ultra " : Samsung == 2 ? "Samsung Galaxy S21 Ultra" : Samsung == 3 ? "Samsung Galaxy S21  " : Samsung == 4 ? "Samsung Galaxy S22+" : Samsung == 5 ? "Samsung Galaxy S21 FE" : Samsung == 6 ? "Samsung Galaxy S23 Ultra " : Samsung == 7 ? "Samsung Galaxy S23 Ultra " : Samsung == 8 ? "Samsung Galaxy A55 " : Samsung == 9 ? "Samsung Galaxy A34" : "")} x{cantidad}");
                             listaPrecios.Add(precioFinal);
 
-                            Console.WriteLine($"Precio por unidad con impuesto: ${precioConImpuesto:F2}");
+                            Console.WriteLine($"Precio por unidad con impuesto: {precioConImpuesto:F2} Lps");
                             Console.WriteLine($"Descuento aplicado: {descuento * 100}%");
-                            Console.WriteLine($"Precio total por {cantidad} unidades: ${precioFinal:F2}");
+                            Console.WriteLine($"Precio total por {cantidad} unidades: {precioFinal:F2} Lps");
 
 
-                            Console.Write("continuar viendo el inventario? ");
+                            Console.WriteLine("continuar viendo el inventario? ");
                             Console.WriteLine("1. si");
                             Console.WriteLine("2. no ");
 
@@ -264,15 +263,15 @@ class Proyecto
                     do
                     {
                         Console.WriteLine("celulares Xiaomi Disponibles en nuestra tienda");
-                        Console.WriteLine("1. Xiaomi Redmi Note 10 Azul 128GB 12000 Lps");
-                        Console.WriteLine("2. Xiaomi Poco X5 Negro 256GB 13500 Lps");
-                        Console.WriteLine("3. Xiaomi Redmi Note 12 Gris 128GB 14800 Lps");
-                        Console.WriteLine("4. Xiaomi Redmi Note 12 Azul 128GB 14650 Lps");
-                        Console.WriteLine("5. Xiaomi Redmi 12C Gris 128GB 11000 Lps");
-                        Console.WriteLine("6. Xiaomi Redmi 12C Gris 64GB 11200 Lps");
-                        Console.WriteLine("7. Xiaomi Redmi 10A Azul 32GB 10999 Lps");
-                        Console.WriteLine("8. Xiaomi 13 Lite 32GB 13000 Lps");
-                        Console.WriteLine("9. Xiaomi POCO F5 128GB 9800 Lps");
+                        Console.WriteLine("1. Xiaomi Redmi Note 10 Azul 128GB 12,000 Lps");
+                        Console.WriteLine("2. Xiaomi Poco X5 Negro 256GB 13,500 Lps");
+                        Console.WriteLine("3. Xiaomi Redmi Note 12 Gris 128GB 14,800 Lps");
+                        Console.WriteLine("4. Xiaomi Redmi Note 12 Azul 128GB 14,650 Lps");
+                        Console.WriteLine("5. Xiaomi Redmi 12C Gris 128GB 11,000 Lps");
+                        Console.WriteLine("6. Xiaomi Redmi 12C Gris 64GB 11,200 Lps");
+                        Console.WriteLine("7. Xiaomi Redmi 10A Azul 32GB 10,999 Lps");
+                        Console.WriteLine("8. Xiaomi 13 Lite 32GB 13,000 Lps");
+                        Console.WriteLine("9. Xiaomi POCO F5 128GB 9,800 Lps");
                         Console.WriteLine("10. Regresar al menu principal");
                         Console.Write("Seleccione un producto: ");
                         Xiaomi = int.Parse(Console.ReadLine());
@@ -349,12 +348,12 @@ class Proyecto
                             listaProductos.Add($"{(Xiaomi == 1 ? "Xiaomi Redmi Note 10 Azul 128GB" : Xiaomi == 2 ? "Xiaomi Poco X5 Negro 256GB " : Xiaomi == 3 ? " Xiaomi Redmi Note 12 Gris 128GB " : Xiaomi == 4 ? "Xiaomi Redmi Note 12 Azul 128GB" : Xiaomi == 5 ? "Xiaomi Redmi 12C Gris 128GB" : Xiaomi == 6 ? "Xiaomi Redmi 12C Gris 64GB " : Xiaomi == 7 ? "Xiaomi Redmi 10A Azul 32GB " : Xiaomi == 8 ? "Xiaomi 13 Lite 32GB " : Xiaomi == 9 ? "Xiaomi POCO F5 128GB" : "")} x{cantidad}");
                             listaPrecios.Add(precioFinal);
 
-                            Console.WriteLine($"Precio por unidad con impuesto: ${precioConImpuesto:F2}");
+                            Console.WriteLine($"Precio por unidad con impuesto: {precioConImpuesto:F2} Lps");
                             Console.WriteLine($"Descuento aplicado: {descuento * 100}%");
-                            Console.WriteLine($"Precio total por {cantidad} unidades: ${precioFinal:F2}");
+                            Console.WriteLine($"Precio total por {cantidad} unidades: {precioFinal:F2} Lps");
 
 
-                            Console.Write("continuar viendo el inventario? ");
+                            Console.WriteLine("continuar viendo el inventario? ");
                             Console.WriteLine("1. si");
                             Console.WriteLine("2. no ");
 
@@ -375,15 +374,15 @@ class Proyecto
                     do
                     {
                         Console.WriteLine("celulares Realme Disponibles en nuestra tienda");
-                        Console.WriteLine("1.  realme 12 11700 Lps");
-                        Console.WriteLine("2.  realme C65 12500 Lps");
-                        Console.WriteLine("3.  realme GT 6 11800 Lps");
-                        Console.WriteLine("4.  realme GT 6T 14950 Lps");
-                        Console.WriteLine("5.  realme 12 5G 14000 Lps");
-                        Console.WriteLine("6.  realme 12+ 5G 11200 Lps");
-                        Console.WriteLine("7.  realme 12 Pro 5G 12999 Lps");
-                        Console.WriteLine("8.  realme Note 50 13000 Lps");
-                        Console.WriteLine("9.  realme 13 Pro 10800 Lps");
+                        Console.WriteLine("1.  realme 12 11,700 Lps");
+                        Console.WriteLine("2.  realme C65 12,500 Lps");
+                        Console.WriteLine("3.  realme GT 6 11,800 Lps");
+                        Console.WriteLine("4.  realme GT 6T 14,950 Lps");
+                        Console.WriteLine("5.  realme 12 5G 14,000 Lps");
+                        Console.WriteLine("6.  realme 12+ 5G 11,200 Lps");
+                        Console.WriteLine("7.  realme 12 Pro 5G 12,999 Lps");
+                        Console.WriteLine("8.  realme Note 50 13,000 Lps");
+                        Console.WriteLine("9.  realme 13 Pro 10,800 Lps");
                         Console.WriteLine("10. Regresar al menu principal");
                         Console.Write("Seleccione un producto: ");
                         Realme = int.Parse(Console.ReadLine());
@@ -460,12 +459,12 @@ class Proyecto
                             listaProductos.Add($"{(Realme == 1 ? " realme 12 " : Realme == 2 ? " realme C65" : Realme == 3 ? "realme GT 6 " : Realme == 4 ? "realme GT 6T" : Realme == 5 ? "realme 12 5G" : Realme  == 6 ? " realme 12+ 5G" : Realme == 7 ? "realme 12 Pro 5G " : Realme == 8 ? "realme Note 50 " : Realme == 9 ? "realme 13 Pro" : "")} x{cantidad}");
                             listaPrecios.Add(precioFinal);
 
-                            Console.WriteLine($"Precio por unidad con impuesto: ${precioConImpuesto:F2}");
+                            Console.WriteLine($"Precio por unidad con impuesto: {precioConImpuesto:F2} Lps");
                             Console.WriteLine($"Descuento aplicado: {descuento * 100}%");
-                            Console.WriteLine($"Precio total por {cantidad} unidades: ${precioFinal:F2}");
+                            Console.WriteLine($"Precio total por {cantidad} unidades: {precioFinal:F2} Lps");
 
 
-                            Console.Write("continuar viendo el inventario? ");
+                            Console.WriteLine("continuar viendo el inventario? ");
                             Console.WriteLine("1. si");
                             Console.WriteLine("2. no ");
                             string seguirComprando = Console.ReadLine().ToLower();
@@ -524,12 +523,12 @@ class Proyecto
 
         for (int i = 0; i < listaProductos.Count; i++)
         {
-            Console.WriteLine($"{listaProductos[i]} - ${listaPrecios[i]:F2}");
+            Console.WriteLine($"{listaProductos[i]} - {listaPrecios[i]:F2} Lps");
             total += listaPrecios[i];
         }
 
         Console.WriteLine($"Gracias por su compra");
-        Console.WriteLine($"A gastado: ${total:F2}");
+        Console.WriteLine($"A gastado: {total:F2} Lps");
    
     }
 }
